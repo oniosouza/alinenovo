@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aline Bolos caseiros - Confeitaria</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div class="logoall">
+      <img src="1.png" />
+    </div>
+    <div class="container">
+      
+
+      <!-- LOGO -->
+
+      <!-- STATUS -->
+      <div class="status">
+        <div class="fechado">
+          <strong>Fechado</strong>
+          &nbsp; Esta loja não abre hoje
+        </div>
+
+        <div class="nota">⭐ 5.0</div>
+      </div>
+
+      <!-- WHATSAPP -->
+      <div class="whatsapp">🟢 WhatsApp</div>
+
+      <!-- BANNER -->
+      <div class="banner">
+        <strong>Seja bem-vindo à Aline Bolos ! ✨</strong>
+
+        <br /><br />
+
+        Tudo feito com carinho para você. 💕
+
+        <br /><br />
+
+        <strong>Entregas:</strong>
+        não temos entregador próprio. Você pode retirar na loja ou solicitar
+        Uber Flash/99 Entrega.
+      </div>
+
+      <!-- CONTEÚDO -->
+      <div class="content">
+        <!-- PRODUTOS -->
+        <main>
+          <!-- BUSCA -->
+          <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="🔎 Digite para buscar um item"
+          />
+
+          <!-- CATEGORIAS -->
+          <div class="categories">
+            <button onclick="filtrar('todos')" class="active">Topo</button>
+
+            <button onclick="filtrar('combo')">COMBO DO DIA</button>
+
+            <button onclick="filtrar('brownie')">COPO BROWNIE</button>
+
+            <button onclick="filtrar('cookie')">Fatia cookie</button>
+
+            <button onclick="filtrar('bolo')">BOLO NO POTE</button>
+
+            <button onclick="filtrar('salgado')">Salgados</button>
+
+            <button onclick="filtrar('bebida')">Bebidas</button>
+          </div>
+
+          <!-- TÍTULO -->
+          <h2 class="category-title">COMBO DO DIA</h2>
+
+          <!-- PRODUTO -->
+          <div
+            class="product"
+            data-category="combo"
+            data-name="Coxinha + Refrigerante"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=500&q=80"
+              alt="Coxinha"
+            />
+
+            <div class="product-info">
+              <h3>COXINHA + REFRIGERANTE</h3>
+
+              <p class="description">
+                Coxinha de costela c/ Cream cheese + refrigerante
+              </p>
+
+              <div class="price">R$ 17,50</div>
+
+              <button
+                class="btn-pedir"
+                onclick="adicionarProduto('Coxinha + Refrigerante', 17.5)"
+              >
+                Pedir
+              </button>
+            </div>
+          </div>
+
+          <!-- COPO BROWNIE -->
+
+          <h2 class="category-title">COPO BROWNIE</h2>
+
+          <div class="product" data-category="brownie" data-name="Copo Brownie">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80"
+              alt="Brownie"
+            />
+
+            <div class="product-info">
+              <h3>COPO BROWNIE</h3>
+
+              <p class="description">
+                Brownie cremoso com brigadeiro e chocolate.
+              </p>
+
+              <div class="price">R$ 14,00</div>
+
+              <button
+                class="btn-pedir"
+                onclick="adicionarProduto('Copo Brownie', 14.0)"
+              >
+                Pedir
+              </button>
+            </div>
+          </div>
+
+          <!-- BOLO NO POTE -->
+
+          <h2 class="category-title">BOLO NO POTE</h2>
+
+          <div class="product" data-category="bolo" data-name="Bolo no Pote">
+            <img
+              src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=500&q=80"
+              alt="Bolo no pote"
+            />
+
+            <div class="product-info">
+              <h3>BOLO NO POTE</h3>
+
+              <p class="description">Massa fofinha com recheio artesanal.</p>
+
+              <div class="price">R$ 12,00</div>
+
+              <button
+                class="btn-pedir"
+                onclick="adicionarProduto('Bolo no Pote', 12.0)"
+              >
+                Pedir
+              </button>
+            </div>
+          </div>
+
+          <!-- SALGADOS -->
+
+          <h2 class="category-title">SALGADOS</h2>
+
+          <div
+            class="product"
+            data-category="salgado"
+            data-name="Empada de Frango"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1627662168223-7df99068099e?auto=format&fit=crop&w=500&q=80"
+              alt="Empada"
+            />
+
+            <div class="product-info">
+              <h3>EMPADA DE FRANGO</h3>
+
+              <p class="description">Empada artesanal de frango cremoso.</p>
+
+              <div class="price">R$ 8,50</div>
+
+              <button
+                class="btn-pedir"
+                onclick="adicionarProduto('Empada de Frango', 8.5)"
+              >
+                Pedir
+              </button>
+            </div>
+          </div>
+
+          <!-- BEBIDAS -->
+
+          <h2 class="category-title">BEBIDAS</h2>
+
+          <div class="product" data-category="bebida" data-name="Refrigerante">
+            <img
+              src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=500&q=80"
+              alt="Refrigerante"
+            />
+
+            <div class="product-info">
+              <h3>REFRIGERANTE</h3>
+
+              <p class="description">Refrigerante lata 350ml.</p>
+
+              <div class="price">R$ 6,00</div>
+
+              <button
+                class="btn-pedir"
+                onclick="adicionarProduto('Refrigerante', 6.0)"
+              >
+                Pedir
+              </button>
+            </div>
+          </div>
+        </main>
+
+        <!-- CARRINHO -->
+
+        <aside class="cart">
+          <div class="cart-header">
+            🛒 Carrinho (<span id="cart-count">0</span>)
+          </div>
+
+          <div class="cart-body" id="cart-items">
+            <div class="empty">Sem itens no carrinho!</div>
+          </div>
+
+          <div class="cart-total">
+            <span>Total:</span>
+
+            <span id="cart-total"> R$ 0,00 </span>
+          </div>
+
+          <button class="checkout" onclick="finalizarPedido()">
+            Finalizar pedido pelo WhatsApp
+          </button>
+        </aside>
+      </div>
+    </div>
+
+    <script>
+      /* =========================
+       CARRINHO
+    ========================== */
+
+      let carrinho = [];
+
+      function adicionarProduto(nome, preco) {
+        const produtoExistente = carrinho.find((item) => item.nome === nome);
+
+        if (produtoExistente) {
+          produtoExistente.quantidade++;
+        } else {
+          carrinho.push({
+            nome: nome,
+            preco: preco,
+            quantidade: 1,
+          });
+        }
+
+        atualizarCarrinho();
+      }
+
+      function removerProduto(nome) {
+        const produto = carrinho.find((item) => item.nome === nome);
+
+        if (!produto) return;
+
+        produto.quantidade--;
+
+        if (produto.quantidade <= 0) {
+          carrinho = carrinho.filter((item) => item.nome !== nome);
+        }
+
+        atualizarCarrinho();
+      }
+
+      function atualizarCarrinho() {
+        const container = document.getElementById("cart-items");
+
+        const contador = document.getElementById("cart-count");
+
+        const totalElement = document.getElementById("cart-total");
+
+        container.innerHTML = "";
+
+        if (carrinho.length === 0) {
+          container.innerHTML = `
+                <div class="empty">
+                    Sem itens no carrinho!
+                </div>
+            `;
+
+          contador.textContent = "0";
+          totalElement.textContent = "R$ 0,00";
+
+          return;
+        }
+
+        let total = 0;
+        let quantidadeTotal = 0;
+
+        carrinho.forEach((item) => {
+          const subtotal = item.preco * item.quantidade;
+
+          total += subtotal;
+
+          quantidadeTotal += item.quantidade;
+
+          const div = document.createElement("div");
+
+          div.classList.add("cart-item");
+
+          div.innerHTML = `
+
+                <strong>
+                    ${item.nome}
+                </strong>
+
+                <div class="cart-controls">
+
+                    <div class="quantity">
+
+                        <button
+                            onclick="removerProduto('${item.nome}')">
+                            -
+                        </button>
+
+                        <span>
+                            ${item.quantidade}
+                        </span>
+
+                        <button
+                            onclick="adicionarProduto(
+                                '${item.nome}',
+                                ${item.preco}
+                            )">
+                            +
+                        </button>
+
+                    </div>
+
+                    <span>
+                        R$ ${subtotal.toFixed(2).replace(".", ",")}
+                    </span>
+
+                </div>
+
+            `;
+
+          container.appendChild(div);
+        });
+
+        contador.textContent = quantidadeTotal;
+
+        totalElement.textContent = "R$ " + total.toFixed(2).replace(".", ",");
+      }
+
+      /* =========================
+       FILTRAR CATEGORIAS
+    ========================== */
+
+      function filtrar(categoria) {
+        const produtos = document.querySelectorAll(".product");
+
+        produtos.forEach((produto) => {
+          if (categoria === "todos" || produto.dataset.category === categoria) {
+            produto.style.display = "flex";
+          } else {
+            produto.style.display = "none";
+          }
+        });
+      }
+
+      /* =========================
+       BUSCA
+    ========================== */
+
+      document.getElementById("search").addEventListener("input", function () {
+        const texto = this.value.toLowerCase();
+
+        const produtos = document.querySelectorAll(".product");
+
+        produtos.forEach((produto) => {
+          const nome = produto.dataset.name.toLowerCase();
+
+          if (nome.includes(texto)) {
+            produto.style.display = "flex";
+          } else {
+            produto.style.display = "none";
+          }
+        });
+      });
+
+      /* =========================
+       WHATSAPP
+    ========================== */
+
+      function finalizarPedido() {
+        if (carrinho.length === 0) {
+          alert("Adicione algum produto ao carrinho.");
+
+          return;
+        }
+
+        let mensagem = "Olá! Gostaria de fazer um pedido:%0A%0A";
+
+        let total = 0;
+
+        carrinho.forEach((item) => {
+          const subtotal = item.preco * item.quantidade;
+
+          total += subtotal;
+
+          mensagem += `🍰 ${item.nome} - ${item.quantidade}x - R$ ${subtotal.toFixed(2)}%0A`;
+        });
+
+        mensagem += `%0A💰 Total: R$ ${total.toFixed(2)}`;
+
+        /*
+            ALTERE O NÚMERO ABAIXO
+            PARA O WHATSAPP DA CONFEITARIA
+        */
+
+        const telefone = "5584987553170";
+
+        const url = `https://wa.me/${telefone}?text=${mensagem}`;
+
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>

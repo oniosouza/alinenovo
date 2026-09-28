@@ -1,0 +1,372 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        color: #333;
+      }
+
+      /* =========================
+           CONTAINER PRINCIPAL
+        ========================== */
+        .logoall {
+    
+        max-width: 450px;
+        margin: auto;
+        padding: 20px;
+      }
+        
+
+      .container {
+        max-width: 950px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      /* =========================
+           LOGO
+        ========================== */
+
+      .logo {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .logo h1 {
+        font-family: Georgia, serif;
+        font-size: 58px;
+        font-weight: normal;
+        color: #222;
+      }
+
+      .logo p {
+        font-size: 18px;
+        letter-spacing: 5px;
+        color: #444;
+        margin-top: 5px;
+      }
+
+      /* =========================
+           STATUS
+        ========================== */
+
+      .status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0;
+      }
+
+      .fechado {
+        color: #e74c3c;
+        font-size: 14px;
+      }
+
+      .nota {
+        color: #c9577e;
+        font-weight: bold;
+      }
+
+      /* =========================
+           WHATSAPP
+        ========================== */
+
+      .whatsapp {
+        color: #555;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+
+      /* =========================
+           BANNER
+        ========================== */
+
+      .banner {
+        background: #e66f9b;
+        color: white;
+        border-radius: 15px;
+        padding: 22px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+      }
+
+      .banner strong {
+        font-size: 18px;
+      }
+
+      /* =========================
+           ÁREA PRINCIPAL
+        ========================== */
+
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 25px;
+        align-items: start;
+      }
+
+      /* =========================
+           BUSCA
+        ========================== */
+
+      .search {
+        width: 100%;
+        padding: 14px;
+        border: 1px solid #d85d88;
+        border-radius: 5px;
+        font-size: 15px;
+        outline: none;
+        margin-bottom: 8px;
+      }
+
+      .search:focus {
+        border-color: #e66f9b;
+        box-shadow: 0 0 4px rgba(230, 111, 155, 0.4);
+      }
+
+      /* =========================
+           CATEGORIAS
+        ========================== */
+
+      .categories {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+
+      .categories button {
+        border: none;
+        background: #f3a2bd;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 10px;
+        white-space: nowrap;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .categories button:hover,
+      .categories button.active {
+        background: #e66f9b;
+      }
+
+      /* =========================
+           TÍTULO DA CATEGORIA
+        ========================== */
+
+      .category-title {
+        background: #f27ca5;
+        color: white;
+        text-align: center;
+        padding: 9px;
+        border-radius: 5px;
+        margin: 12px 0;
+        font-size: 20px;
+      }
+
+      /* =========================
+           PRODUTO
+        ========================== */
+
+      .product {
+        display: flex;
+        gap: 15px;
+        border: 1px solid #ddd;
+        border-radius: 9px;
+        padding: 8px;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        background: white;
+        transition: 0.2s;
+      }
+
+      .product:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+      }
+
+      .product img {
+        width: 140px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .product-info {
+        flex: 1;
+        position: relative;
+        padding: 5px;
+      }
+
+      .product-info h3 {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .description {
+        color: #777;
+        font-size: 13px;
+        line-height: 1.4;
+      }
+
+      .price {
+        font-weight: bold;
+        color: #333;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+      }
+
+      .btn-pedir {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border: none;
+        background: #c9577e;
+        color: white;
+        padding: 7px 13px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .btn-pedir:hover {
+        background: #a94265;
+      }
+
+      /* =========================
+           CARRINHO
+        ========================== */
+
+      .cart {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        overflow: hidden;
+        position: sticky;
+        top: 15px;
+      }
+
+      .cart-header {
+        background: #f5f5f5;
+        border-bottom: 1px solid #ddd;
+        padding: 14px;
+        font-size: 20px;
+      }
+
+      .cart-body {
+        padding: 15px;
+        min-height: 100px;
+      }
+
+      .empty {
+        text-align: center;
+        color: #777;
+        padding: 20px 0;
+      }
+
+      .cart-item {
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+      }
+
+      .cart-item strong {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .cart-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .quantity button {
+        border: none;
+        background: #e66f9b;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .quantity span {
+        margin: 0 8px;
+      }
+
+      .cart-total {
+        padding: 15px;
+        border-top: 1px solid #ddd;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .checkout {
+        width: calc(100% - 30px);
+        margin: 0 15px 15px;
+        padding: 13px;
+        background: #25d366;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .checkout:hover {
+        background: #1da851;
+      }
+
+      /* =========================
+           RESPONSIVO
+        ========================== */
+
+      @media (max-width: 750px) {
+        .container {
+          padding: 12px;
+        }
+
+        .logo h1 {
+          font-size: 42px;
+        }
+
+        .logo p {
+          font-size: 14px;
+        }
+
+        .content {
+          grid-template-columns: 1fr;
+        }
+
+        .cart {
+          position: static;
+          order: -1;
+        }
+
+        .product img {
+          width: 110px;
+          height: 100px;
+        }
+
+        .price {
+          position: static;
+          margin-top: 10px;
+        }
+
+        .btn-pedir {
+          position: static;
+          margin-top: 8px;
+        }
+      }
+    
