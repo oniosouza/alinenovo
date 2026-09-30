@@ -22,7 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /* =========================
    LOGO
 ========================= */
@@ -41,7 +40,6 @@ body {
   margin: 0 auto;
 }
 
-
 /* =========================
    CONTAINER
 ========================= */
@@ -52,7 +50,6 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-
 
 /* =========================
    STATUS
@@ -72,7 +69,6 @@ body {
   font-weight: bold;
 }
 
-
 /* =========================
    WHATSAPP
 ========================= */
@@ -82,7 +78,6 @@ body {
   margin-bottom: 15px;
   font-weight: bold;
 }
-
 
 /* =========================
    BANNER
@@ -101,7 +96,6 @@ body {
 .banner strong {
   font-size: clamp(16px, 2vw, 18px);
 }
-
 
 /* =========================
    ÁREA PRINCIPAL
@@ -124,7 +118,6 @@ body {
   align-items: start;
 }
 
-
 /* =========================
    BUSCA
 ========================= */
@@ -146,10 +139,8 @@ body {
 .search:focus {
   border-color: #e66f9b;
 
-  box-shadow:
-    0 0 4px rgba(230, 111, 155, 0.4);
+  box-shadow: 0 0 4px rgba(230, 111, 155, 0.4);
 }
-
 
 /* =========================
    CATEGORIAS
@@ -200,7 +191,6 @@ body {
   background: #e66f9b;
 }
 
-
 /* =========================
    TÍTULO DA CATEGORIA
 ========================= */
@@ -223,7 +213,6 @@ body {
   font-size: clamp(17px, 3vw, 20px);
 }
 
-
 /* =========================
    PRODUTO
 ========================= */
@@ -243,8 +232,7 @@ body {
 
   margin-bottom: 12px;
 
-  box-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 
   background: white;
 
@@ -254,10 +242,8 @@ body {
 .product:hover {
   transform: translateY(-2px);
 
-  box-shadow:
-    0 4px 10px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
-
 
 /* =========================
    IMAGEM DO PRODUTO
@@ -273,7 +259,6 @@ body {
 
   flex-shrink: 0;
 }
-
 
 /* =========================
    INFORMAÇÕES
@@ -307,7 +292,6 @@ body {
   line-height: 1.4;
 }
 
-
 /* =========================
    PREÇO
 ========================= */
@@ -319,7 +303,6 @@ body {
 
   margin-top: 12px;
 }
-
 
 /* =========================
    BOTÃO PEDIR
@@ -346,7 +329,6 @@ body {
 .btn-pedir:hover {
   background: #a94265;
 }
-
 
 /* =========================
    CARRINHO
@@ -392,7 +374,6 @@ body {
   padding: 20px 0;
 }
 
-
 /* =========================
    ITEM DO CARRINHO
 ========================= */
@@ -418,7 +399,6 @@ body {
 
   gap: 10px;
 }
-
 
 /* =========================
    QUANTIDADE
@@ -450,7 +430,6 @@ body {
   margin: 0 8px;
 }
 
-
 /* =========================
    TOTAL
 ========================= */
@@ -470,7 +449,6 @@ body {
 
   gap: 10px;
 }
-
 
 /* =========================
    BOTÃO WHATSAPP
@@ -504,13 +482,11 @@ body {
   background: #1da851;
 }
 
-
 /* =====================================================
    TABLET
 ===================================================== */
 
 @media (max-width: 900px) {
-
   .container {
     padding: 18px;
   }
@@ -529,13 +505,11 @@ body {
   }
 }
 
-
 /* =====================================================
    CELULAR
 ===================================================== */
 
 @media (max-width: 750px) {
-
   .container {
     padding: 12px;
   }
@@ -565,13 +539,11 @@ body {
   }
 }
 
-
 /* =====================================================
    CELULAR PEQUENO
 ===================================================== */
 
 @media (max-width: 480px) {
-
   .container {
     padding: 10px;
   }
@@ -631,13 +603,11 @@ body {
   }
 }
 
-
 /* =====================================================
    CELULAR MUITO PEQUENO
 ===================================================== */
 
 @media (max-width: 350px) {
-
   /*
      Quando a tela for muito estreita,
      imagem fica em cima e texto embaixo
@@ -689,7 +659,6 @@ main,
 ------------------------- */
 
 @media (max-width: 750px) {
-
   .content {
     display: flex;
     flex-direction: column;
@@ -802,13 +771,11 @@ main,
   }
 }
 
-
 /* =====================================================
    CELULAR PEQUENO
 ===================================================== */
 
 @media (max-width: 480px) {
-
   .container {
     width: 100%;
     max-width: 100%;
